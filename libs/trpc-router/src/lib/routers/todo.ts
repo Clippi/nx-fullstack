@@ -12,7 +12,7 @@ let id = 1
 
 const todoRouter = router({
   get: publicProcedure.input(z.object({ id: z.number() })).query(({ input }) => {
-    todos.get(input.id)
+    return todos.get(input.id)
   }),
   getAll: publicProcedure.query(() => {
     return Array.from(todos.values())

@@ -1,0 +1,15 @@
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+}
+
+.primary-input {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    border-color: var(--color-bg-accent);
+}
+
+.accent-text {
+    color: var(--color-text-accent);
+}

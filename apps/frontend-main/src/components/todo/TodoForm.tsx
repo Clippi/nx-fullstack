@@ -19,9 +19,18 @@ const TodoForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" value={title} onChange={e => setTitle(e.target.value)} />
-      <button type="submit">Add</button>
+    <form onSubmit={handleSubmit} className="py-3">
+      <div className="flex-row space-x-3">
+        <input
+          type="text"
+          value={title}
+          onChange={e => setTitle(e.target.value)}
+          className="rounded border-2 primary-input h-auto p-1"
+        />
+        <button type="submit" className="primary-input p-1 border-2 rounded hover:scale-105">
+          Add
+        </button>
+      </div>
     </form>
   )
 }

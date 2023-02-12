@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@shared/styles": ["libs/frontend-shared/styles/src/index.css"],
       "@shared/trpc": ["libs/trpc-router/src/index.ts"]
     },
     "strict": true

@@ -4,9 +4,4 @@
     --sea-green: hsla(166, 100%, 28%, 1);
     --blush: hsla(348, 74%, 60%, 1);
     --raisin-black: hsla(236, 21%, 14%, 1);
-    --color-bg-primary: var(--raisin-black);
-    --color-bg-accent: var(--blush);
-    --color-text-primary: var(--mint-cream);
-    --color-text-secondary: var(--sea-green);
-    --color-text-accent: var(--blush)
 }

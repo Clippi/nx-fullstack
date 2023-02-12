@@ -1,21 +1,21 @@
-import { useState } from 'react'
-import { trpc } from '../../trpcClient'
+import {FormEvent, useState} from 'react'
+import {trpc} from '../../trpcClient'
 
 const TodoForm = () => {
   const utils = trpc.useContext()
-  const { mutate } = trpc.todo.create.useMutation({
+  const {mutate} = trpc.todo.create.useMutation({
     onSuccess: createdTodo => {
       utils.todo.getAll.setData(undefined, prev => {
-        if (!prev) return prev
+        if (!prev) return [createdTodo]
         return [...prev, createdTodo]
       })
     },
   })
   const [title, setTitle] = useState('')
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    mutate({ title })
+    mutate({title})
   }
 
   return (
@@ -25,9 +25,9 @@ const TodoForm = () => {
           type="text"
           value={title}
           onChange={e => setTitle(e.target.value)}
-          className="rounded border-2 primary-input h-auto p-1"
+          className="rounded bg-black outline-none focus:border-pink border-2 primary-input h-auto p-1"
         />
-        <button type="submit" className="primary-input p-1 border-2 rounded hover:scale-105">
+        <button type="submit" className="primary-input p-1 border-2 rounded hover:scale-105 hover:border-green">
           Add
         </button>
       </div>

@@ -1,15 +1,30 @@
 
 body {
-    background-color: var(--color-bg-primary);
-    color: var(--color-text-primary);
+  background-color: var(--raisin-black);
+  color: var(--mint-cream);
 }
 
-.primary-input {
-    background-color: var(--color-bg-primary);
-    color: var(--color-text-primary);
-    border-color: var(--color-bg-accent);
+.color-bg-primary {
+  background-color: var(--raisin-black);
 }
 
-.accent-text {
-    color: var(--color-text-accent);
+.color-bg-accent {
+  background-color: var(--sea-green);
 }
+
+.color-text-primary {
+  color: var(--mint-cream);
+}
+
+.color-text-accent {
+  color: var(--blush);
+}
+
+.color-border-primary {
+  border-color: var(--sea-green);
+}
+
+.color-border-accent {
+  border-color: var(--blush);
+}
+

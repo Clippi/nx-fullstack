@@ -1,0 +1,30 @@
+
+body {
+  background-color: var(--raisin-black);
+  color: var(--mint-cream);
+}
+
+.color-bg-primary {
+  background-color: var(--raisin-black);
+}
+
+.color-bg-accent {
+  background-color: var(--sea-green);
+}
+
+.color-text-primary {
+  color: var(--mint-cream);
+}
+
+.color-text-accent {
+  color: var(--blush);
+}
+
+.color-border-primary {
+  border-color: var(--sea-green);
+}
+
+.color-border-accent {
+  border-color: var(--blush);
+}
+

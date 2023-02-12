@@ -3,11 +3,11 @@ import TodoList from '../components/todo/TodoList'
 
 const TodoView = () => {
   return (
-    <>
-      <div>TODOVIEW</div>
-      <TodoForm />
-      <TodoList />
-    </>
+    <div className="text-center mt-36">
+      <h2 className="color-text-accent text-3xl py-4">TODOSVIEW</h2>
+      <TodoForm/>
+      <TodoList/>
+    </div>
   )
 }
 
